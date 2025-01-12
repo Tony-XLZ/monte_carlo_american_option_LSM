@@ -7,7 +7,7 @@
 #include <Eigen/Dense>
 using namespace std;
 
-// ======= Utility: standard normal PDF and CDF =======
+// ======= Utility: standard normal CDF =======
 static double stdnorm_cdf(double x){
     static const double invSqrt2=0.7071067811865475;
     return 0.5 * std::erfc(-x * invSqrt2);
